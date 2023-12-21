@@ -192,8 +192,19 @@ p{
     object-fit: cover;
 }
 
+.questionMark{
+    object-fit: fill;
+}
+
 .projectInformationWrapper{
     padding: 0 30px 15px 30px;
+}
+
+.question{
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .projectTitleAndLinks{
@@ -220,6 +231,13 @@ h3{
 .gitHubIcon{
     width: 25px;
     height: 25px;
+}
+
+.projectCtaIcon{
+    width: 25px;
+    height: 25px;
+
+    margin-left: 30px;
 }
 
 .projectDetails{
@@ -292,11 +310,7 @@ h3{
 
     background-color: #000000;
     color:white;
-}
-
-.footerBtn:hover{
-    box-shadow: 0 0 10px 3px white;
-}
+} 
 
 .footerImg{
     min-width: 60%;
