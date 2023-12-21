@@ -399,6 +399,10 @@ h3{
 }
 
 @media (max-width: 475px){
+    header{
+        padding: 10px;
+    }
+
     .heroSection{
         grid-template-columns: 100vw;
 
@@ -410,18 +414,52 @@ h3{
         margin-bottom: 15px;
     }
 
-    .heroImgWrapper{
-        height: 300px;
-    }
-
-    .projectsGrid{
-        gap: 30px;
+    .leftHeroSection{
+        max-width: 100%;
     }
 
     .mainHeaderH1,
     .heroParagraph{
         max-width: 90%;
     }
+
+    .mainHeaderH1{
+        font-size: 30px;
+    }
+
+    .experiencesContainer{
+        max-width: 80vw;
+    }
+
+    .experience{
+        width: 33vw;
+    }
+
+    .experienceYears{
+        font-size: 40px;
+    }
+
+    .heroImgWrapper{
+        margin-right: auto;
+        margin-left: auto;
+
+        height: 300px;
+    }
+
+    .heroImg{
+        width: min(25rem, 80%);
+        height: 250px;
+    }
+
+    .projectsSection{
+        padding-top: 0;
+    }
+
+    .projectsGrid{
+        gap: 30px;
+    }
+
+
 
     .footer{
         margin-top: 30px;
