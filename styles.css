@@ -37,23 +37,24 @@ p{
 }
 
 .heroSection{
-    grid-template-columns: 0.7fr auto;
-    grid-template-rows: 90vh;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80vh;
     column-gap: 2rem;
 
     align-items: center;
     justify-items: center;
 
-    height: 90vh;
-
     padding: 0 60px;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .mainHeaderH1{
     font-size: 40px;
     line-height: 1.2;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .heroParagraph{
@@ -102,12 +103,6 @@ p{
     box-shadow: 0 0 10px 3px white;
 }
 
-/* 
-@media (max-width: 900px){
-
-} 
-*/
-
 .experiencesContainer{
     gap: 30px;
 
@@ -146,7 +141,7 @@ p{
 
 .heroImgWrapper{
     width: min(35rem, 100%);
-    height: min(35rem, 100%);
+    height: 520px;
 }
 
 .heroImg{
@@ -167,6 +162,8 @@ p{
 
     padding: 60px;
     padding-top: 0;
+
+    overflow: hidden;
 }
 
 .secondaryHeaderH2{
@@ -178,6 +175,8 @@ p{
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px;
+
+    max-width: 100%;
 
     margin-top: 30px;
 }
@@ -215,7 +214,7 @@ h3{
     height: 35px;
 
     margin-top: -5px;
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 .gitHubIcon{
@@ -304,4 +303,113 @@ h3{
     height: 500px;
 
     object-fit: fill;
+}
+
+
+@media (max-width: 1000px){
+    .heroSection{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        row-gap: 30px;
+                
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .heroImgWrapper{
+        width: min(30rem, 80%);
+        height: 470px;
+    }
+
+    .projectsGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+
+    .footerInfoGrid{
+        width: auto;
+    }
+} 
+
+@media (max-width: 800px){
+    .heroSection{
+        margin-bottom: 60px;
+    }
+
+    .heroImgWrapper{
+        width: min(30rem, 80%);
+        height: 450px;
+    }
+
+    .projectImg{
+        height: 300px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footerInfoGrid{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;    
+    }
+
+    .footerBtn{
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 675px) {
+    .heroSection{
+        padding: 0 30px;
+    }
+
+    .projectsSection{
+        padding: 30px;
+    }
+
+    .projectsGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .projectImg{
+        height: 250px;
+    }
+
+    .footerInfoGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 475px){
+    .heroSection{
+        grid-template-columns: 100vw;
+
+        overflow: hidden;
+
+        padding: 15px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .heroImgWrapper{
+        height: 300px;
+    }
+
+    .projectsGrid{
+        gap: 30px;
+    }
+
+    .mainHeaderH1,
+    .heroParagraph{
+        max-width: 90%;
+    }
+
+    .footer{
+        margin-top: 30px;
+    }
 }
